@@ -52,7 +52,6 @@ public class OptionalEx1 {
         System.out.println("result6 = " + result6);
     }
 
-
     static int optStrToInt(Optional<String> optStr, int defaultValue) {
         try {
             return optStr.map(Integer::parseInt).orElse(-1);
