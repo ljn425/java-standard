@@ -52,7 +52,6 @@ class SumTask extends RecursiveTask<Long> {
 
         return rightSum.compute() + leftSum.join();
     }
-
     private Long sum() {
         long tmp = 0L;
         for (long i = from; i <= to; i++) {
@@ -60,5 +59,4 @@ class SumTask extends RecursiveTask<Long> {
         }
         return tmp;
     }
-
 }
